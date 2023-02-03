@@ -1,0 +1,21 @@
+<div class="grid-container">
+    <h1 class="mat-h1">Dialog</h1>
+    <div>
+
+        <ol>
+            <li>
+              <mat-form-field appearance="fill">
+                <mat-label>Cual es tu nombre</mat-label>
+                <input matInput [(ngModel)]="name">
+              </mat-form-field>
+            </li>
+            <li>
+              <button mat-raised-button (click)="openDialog()">Click</button>
+            </li>
+            <li *ngIf="animal">
+              Tu animal favorito es: <i>{{animal}}</i>
+            </li>
+          </ol>
+          
+    </div>
+</div>
